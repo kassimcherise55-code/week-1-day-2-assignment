@@ -3,71 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Navigation Example</title>
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"href="style-5.css">
+    <title>FastSend — Documentation & FAQ</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- STICKY NAVBAR -->
-    <header class="navbar">
-        <div class="logo">DevStudio ⚡</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky-navbar">
+        <div class="sticky-nav-container">
+            <a href="index.html" class="logo">FastSend Hub</a>
+            <ul class="sticky-nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#api">API Docs</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- MAIN SCROLLABLE CONTENT -->
-    <main class="container">
-
+    <main class="content-container">
         <!-- Section 1 -->
-        <section id="about" class="content-section">
-            <h2>1. About Us</h2>
-            <p>Welcome to DevStudio! We are a forward-thinking digital team dedicated to building fast, clean, and modern web applications. Our mission is to combine intuitive design with robust software architecture.</p>
-            <p>Founded in 2024, our team has helped dozens of startups and scale-ups establish a compelling online presence with responsive layouts, accessible component systems, and scalable codebases.</p>
+        <section id="overview" class="content-section">
+            <h2>1. Platform Overview</h2>
+            <p>FastSend is a next-generation financial platform built specifically for Kenyan businesses and consumers. We bridge the gap between traditional banking and mobile wallets through instant, low-cost APIs.</p>
+            <p>Whether operating a retail store in Mombasa or a digital software enterprise in Nairobi, FastSend guarantees zero settlement delays and automated reconciliations.</p>
         </section>
 
         <!-- Section 2 -->
-        <section id="services" class="content-section">
-            <h2>2. Our Services</h2>
-            <p>We specialize in full-stack web development, user interface design, and modern CSS architecture. Whether you need a simple landing page or a complex web dashboard, we craft tailored solutions.</p>
-            <p>Our Core Offerings Include:</p>
-            <p>• Frontend Web Development (HTML, CSS, JavaScript, React)</p>
-            <p>• UI/UX Design System Creation</p>
-            <p>• Mobile-First Responsive Optimization</p>
+        <section id="payments" class="content-section">
+            <h2>2. Payment Solutions</h2>
+            <p>Support all customer payment preferences with a single integration. FastSend accepts MPesa, Airtel Money, Visa, Mastercard, and direct bank transfers from all major Kenyan banks.</p>
+            <p>Transactions are processed instantly with real-time webhooks notifying your application immediately upon receipt.</p>
         </section>
 
         <!-- Section 3 -->
-        <section id="portfolio" class="content-section">
-            <h2>3. Recent Portfolio</h2>
-            <p>Explore some of our recent client projects across mobile money integration, e-commerce platforms, and interactive dashboards built for scale.</p>
-            <p>Every project we launch is engineered for speed, search engine optimization (SEO), and full cross-browser compatibility across desktop, tablet, and mobile devices.</p>
+        <section id="security" class="content-section">
+            <h2>3. Security & Compliance</h2>
+            <p>Security is built into every layer of our network infrastructure. FastSend complies with national regulations set by the Central Bank of Kenya (CBK) and Data Protection Act standards.</p>
+            <p>We perform daily automated security scans, end-to-end tokenization, and multi-factor authentication across all developer accounts.</p>
         </section>
 
         <!-- Section 4 -->
-        <section id="testimonials" class="content-section">
-            <h2>4. Client Testimonials</h2>
-            <p>"DevStudio delivered our web layout weeks ahead of schedule. The sticky navigation and responsive features made our customer conversion rates surge immediately." — Tech Kenya CEO</p>
-            <p>"Working with this engineering team was seamless. The code quality was exceptionally high and structured according to modern standards." — Product Lead</p>
+        <section id="api" class="content-section">
+            <h2>4. API Integration</h2>
+            <p>Our RESTful APIs allow developers to go live in less than 30 minutes. SDKs are readily available for Node.js, Python, PHP, and Android platforms.</p>
+            <p>Test your integration seamlessly using our sandbox environment with test credentials and simulated MPesa payments.</p>
         </section>
 
-        <!-- Section 5 -->
-        <section id="contact" class="content-section">
-            <h2>5. Get in Touch</h2>
-            <p>Have a project in mind or want to learn more about our web layout services? Drop us a line and let's build something great together.</p>
-            <p>Email: hello@devstudio.co.ke | Phone: +254 700 000 000 | Location: Nairobi, Kenya</p>
-        </section>
+        <!-- Section 5 (Bonus Accordion FAQ) -->
+        <section id="faq" class="content-section">
+            <h2>5. Frequently Asked Questions</h2>
+            <p class="section-intro">Find quick answers to common questions regarding FastSend services below.</p>
+            
+            <div class="accordion-container">
+                <details class="faq-item">
+                    <summary class="faq-summary">How fast are transaction payouts?</summary>
+                    <div class="faq-content">
+                        <p>All transfers to MPesa wallets and local Kenyan bank accounts are processed in real-time (under 5 seconds).</p>
+                    </div>
+                </details>
 
+                <details class="faq-item">
+                    <summary class="faq-summary">Are there any monthly registration fees?</summary>
+                    <div class="faq-content">
+                        <p>No! FastSend operates on a transparent pay-as-you-go model. You only pay a small percentage per successful transaction.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">Is FastSend regulated in Kenya?</summary>
+                    <div class="faq-content">
+                        <p>Yes, FastSend complies strictly with the Central Bank of Kenya (CBK) guidelines and national data privacy laws.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">Can I integrate FastSend into my website?</summary>
+                    <div class="faq-content">
+                        <p>Absolutely. We provide simple WooCommerce plugins, Shopify add-ons, and clean RESTful APIs for custom applications.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">How can I contact FastSend Support?</summary>
+                    <div class="faq-content">
+                        <p>Our customer support team is available 24/7 via live chat, email (support@fastsend.co.ke), or WhatsApp (+254 700 000 000).</p>
+                    </div>
+                </details>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 DevStudio. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 FastSend Kenya. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#overview">Back to Top</a>
+            </div>
+        </div>
     </footer>
 
 </body>

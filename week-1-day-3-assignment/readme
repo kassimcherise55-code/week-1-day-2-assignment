@@ -1,0 +1,11 @@
+# Web Development Assignment — CSS Layouts, Grid Gallery, & Sticky Navigation
+
+This repository contains a complete multi-page web application demonstrating CSS Flexbox, CSS Grid, media queries, sticky positioning, and semantic HTML5.
+
+## Project Structure
+```text
+├── index.html         # Task 1: Landing Page (Flexbox)
+├── gallery.html       # Task 2: Photo Gallery (CSS Grid)
+├── sticky-nav.html    # Task 3: Sticky Navigation & Bonus Accordion FAQ
+├── styles.css         # Unified master stylesheet
+└── README.md          # Project documentation

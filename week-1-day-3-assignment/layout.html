@@ -3,55 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FastSend - Send Money Instantly Across Kenya</title>
-    <!--Google Font-->  
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">"
-    <link rel="stylesheet"href="style-3.css">
-
+    <title>FastSend — Send Money Instantly Across Kenya</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--NAVBAR SECTION-->
+
+    <!-- Header / Navbar -->
     <header class="navbar">
-        <div class="logo">FastSend🚀</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-bolt"></i> FastSend</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="sticky-nav.html">Features</a></li>
+            </ul>
+        </div>
     </header>
-    <!--HERO SECTION-->
+
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>Send Money Instantly Across Kenya</h1>
-        <p>FastSend is the fastest and most secure way to send money across Kenya. With our platform, you can transfer funds instantly to any bank account or mobile wallet.</p>
-        <button class="btn hero">Get Started</button>
+        <div class="hero-content">
+            <h1>Send Money Instantly Across Kenya</h1>
+            <p>FastSend empowers businesses and individuals with zero-fee mobile money transfers, instant bank payouts, and seamless MPesa integration.</p>
+            <a href="sticky-nav.html" class="cta-btn">Get Started Now</a>
+        </div>
     </section>
-    <!--FEATURES SECTION-->
-    <main class="features">
-        <div class="feature-cards">
-            <div class="feature-icon">⚡</div>
-                <h3>Lightning Transfers</h3>
-                <p>Direct integration with local Kenyan mobile money providers ensures your payments clear instantly, 24/7.</p>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Kenya Chooses FastSend</h2>
+            <div class="features-grid">
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Instant MPesa Integration</h3>
+                    <p>Connect your business to MPesa Till and Paybill services instantly. Settle payments directly into your account with 99.9% uptime guaranteed.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Bank-Grade Security</h3>
+                    <p>Protected by end-to-end 256-bit encryption and regulated under CBK guidelines. Your transactions and digital receipts remain safe at all times.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Real-Time Analytics</h3>
+                    <p>Monitor your cash flow with custom dashboard reports. Gain instant visibility into daily earnings, transaction histories, and sales trends.</p>
+                </div>
+
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔒</div>
-                <h3>Secure Transactions</h3>
-                <p>Protected with end-to-end encryption and regulated by the central bank of kenya to keep your funds safe</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 FastSend Kenya Ltd. All rights reserved.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">💰</div>
-                <h3>Zero Transaction Fees</h3>
-                <p>Send up to KES 10,000 daily to friends, family, and businesses without paying extra processing charges</p>
-         </div>
-     </main>
-     <!--FOOTER SECTION-->
-     <footer class="footer">
-        <p>&copy; 2026 FastSend. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">Twitter</a>
-            <a href="#">Linkedin</a>
-            <a href="#">Instagram</a>
-         </div>
-     </footer>
+            <div class="footer-right">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

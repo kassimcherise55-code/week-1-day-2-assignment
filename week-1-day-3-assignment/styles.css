@@ -1,0 +1,384 @@
+/* ==========================================================================
+   GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   TASK 1: LANDING PAGE LAYOUT & NAVBAR
+   ========================================================================== */
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-weight: 600;
+    color: #475569;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    margin-bottom: 28px;
+}
+
+.cta-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Feature Cards (Flexbox) */
+.features-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 48px;
+}
+
+.features-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 32px 24px;
+    flex: 1; /* Equal widths */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 2.2rem;
+    color: #2563eb;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 32px 0;
+    border-top: 1px solid #1e293b;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-right a:hover {
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   TASK 2: PHOTO GALLERY (CSS GRID)
+   ========================================================================== */
+
+.gallery-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-header h1 {
+    font-size: 2.2rem;
+    color: #0f172a;
+}
+
+.gallery-header p {
+    color: #64748b;
+}
+
+/* Grid Layout Specifications */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on Desktop */
+    gap: 16px;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item figcaption {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #334155;
+    text-align: center;
+}
+
+/* Gallery Responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on Tablet */
+    }
+}
+
+@media (max-width: 767px) {
+    .features-grid {
+        flex-direction: column; /* Stack features vertically on mobile */
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* 1 column on Mobile */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
+   TASK 3: STICKY NAVIGATION BAR
+   ========================================================================== */
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 20px;
+}
+
+.sticky-nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.sticky-nav-links a {
+    font-weight: 600;
+    color: #334155;
+}
+
+.sticky-nav-links a:hover {
+    color: #2563eb;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+
+.content-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.content-section p {
+    color: #475569;
+    margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   BONUS CHALLENGE: CSS-ONLY FAQ ACCORDION (<details> & <summary>)
+   ========================================================================== */
+
+.accordion-container {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Custom Summary Header */
+.faq-summary {
+    background-color: #f1f5f9;
+    padding: 16px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none; /* Hide default triangle in browsers */
+    position: relative;
+    padding-right: 40px;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.faq-summary::-webkit-details-marker {
+    display: none; /* Hide default triangle in WebKit */
+}
+
+.faq-summary:hover {
+    background-color: #e2e8f0;
+}
+
+/* Plus (+) and Minus (-) Indicator */
+.faq-summary::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+details[open] .faq-summary::after {
+    content: "−";
+}
+
+/* Content Styling with Accent Border */
+.faq-content {
+    padding: 16px 20px;
+    border-left: 4px solid #2563eb;
+    background-color: #ffffff;
+}
+
+.faq-content p {
+    margin: 0;
+    color: #475569;
+}
