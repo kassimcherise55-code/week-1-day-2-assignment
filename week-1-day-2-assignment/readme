@@ -1,0 +1,11 @@
+# Web Development Assignment — Business Card & Pricing Cards
+
+## Overview
+This repository contains a two-page website featuring an interactive Business Card and a responsive Pricing Plans page built with semantic HTML5 and CSS Flexbox.
+
+## Project Structure
+```text
+├── business-card.html   # Personal business card page
+├── pricing.html         # 3-card pricing plans page
+├── styles.css           # Unified CSS stylesheet
+└── README.md            # Project documentation and deployment details
